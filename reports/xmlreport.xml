@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="40.017168">
+    <testcase classname="eLearning Portal functionality Verification" name="Verify the registration Process" time="13.985536">
+        <system-out><![CDATA[When user navigates to eLearning portal.....................................passed
+When user click on the Sign up link.........................................passed
+When user selects the course - "Follow courses" in Courses radio button.....passed
+When user enters the first name - "Automation" in the First name field......passed
+When user enters the last name - "Testing" in the Last name field...........passed
+When user enters the email - "Automation@Testing.com" in the Email field....passed
+When user enters the username - "Keeptesting" in the Username field.........passed
+When user enters the password - "Keeptesting@123" in the pass field.........passed
+When user enters the confirm Password - "Keeptesting@123" in the Confirm Password field.passed
+When user enters the Phone num - "9535098000" in the Phone field............passed
+When user selects the Language - "English" in the Language select box.......passed
+When user clicks on the Register button.....................................passed
+Then Signup successful message should be displayed..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="eLearning Portal functionality Verification" name="Verify the elearning portal login feature" time="0.062631">
+        <system-out><![CDATA[When User enters the Login Username : "Keeptesting11" field value...........passed
+When User enters the Login Password : "Keeptesting@123" field value.........passed
+When User clicks on Signin button...........................................passed
+Then Welcome screen or Homepage should be displayed.........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="eLearning Portal functionality Verification" name="Verify the SendMail Functionality" time="4.185874">
+        <system-out><![CDATA[When User clicks on the Profile Icon........................................passed
+When User clicks on the Inbox Link..........................................passed
+When User clicks on the Compose Message Icon................................passed
+Then New Message page should be displayed...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="eLearning Portal functionality Verification" name="Verify the SendMail Functionality" time="17.260695">
+        <system-out><![CDATA[When User enters the Receipient address - "sales" in the Send To field......passed
+When User clicks on the email popup suggestion under SendTo field...........passed
+When User enters the Subject - "Hi For Testing" in the Subject field........passed
+When User enters the Message - "Hello Mr.Portal, This is for testing. From, Automation" in the Message field.passed
+When User clicks on the Send Message button.................................passed
+Then Mail Sending success message should be displayed on screen.............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="eLearning Portal functionality Verification" name="Verify the Mail Outbox Functionality" time="3.447591">
+        <system-out><![CDATA[When User clicks on the Profile Icon........................................passed
+When User clicks on the Inbox Link..........................................passed
+When User clicks on the Outbox Icon.........................................passed
+When User clicks on the "Hi For Testing" Link...............................passed
+Then Mail "Hello Mr.Portal, This is for testing. From, Automation" should be displayed on screen with subject "Hi For Testing".passed
+]]></system-out>
+    </testcase>
+    <testcase classname="eLearning Portal functionality Verification" name="Finalise and close browser" time="1.074841">
+        <system-out><![CDATA[When Mail "Hello Mr.Portal, This is for testing. From, Automation" should be displayed on screen with subject "Hi For Testing".passed
+Then close the browser instance.............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
